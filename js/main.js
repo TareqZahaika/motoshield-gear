@@ -102,6 +102,7 @@ function renderHeader() {
   $(".site-header").innerHTML = `
     <nav class="nav">
       <a class="brand" href="index.html"><span class="brand-mark">MS</span><span>MotoShield Gear</span></a>
+      <a class="home-button" href="index.html">Home</a>
       <button class="btn secondary small mobile-toggle" type="button">Menu</button>
       <div class="nav-links">
         ${[
