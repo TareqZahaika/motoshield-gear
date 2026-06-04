@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Contact | MotoShield Gear</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script defer src="js/supabase.js"></script>
+    <script defer src="js/cart.js"></script>
+    <script defer src="js/telegram.js"></script>
+    <script defer src="js/main.js"></script>
+    <script defer src="js/ai-assistant.js"></script>
+  </head>
+  <body data-page="contact">
+    <header class="site-header"></header>
+    <main class="page">
+      <section class="page-title"><p class="eyebrow">Contact</p><h1>Ask about products, sizing, delivery, or customization</h1></section>
+      <section class="checkout-layout">
+        <form class="form-card" id="contactForm">
+          <label>Full name<input name="full_name" required></label>
+          <label>Email<input name="email" type="email" required></label>
+          <label>Subject<input name="subject" required></label>
+          <label>Message<textarea name="message" required></textarea></label>
+          <button class="btn primary" type="submit">Send message</button>
+          <p class="form-message" id="contactMessage"></p>
+        </form>
+        <aside class="summary">
+          <h2>Telegram Bot</h2>
+          <p>Customers can contact the store through a Telegram Bot. Real bot tokens must be stored on a backend server, not inside frontend code.</p>
+          <button class="btn secondary full" id="telegramButton">Contact us on Telegram</button>
+        </aside>
+      </section>
+    </main>
+    <footer class="site-footer"></footer>
+    <div id="aiAssistant"></div>
+  </body>
+</html>

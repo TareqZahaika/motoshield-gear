@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Products | MotoShield Gear</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script defer src="js/supabase.js"></script>
+    <script defer src="js/cart.js"></script>
+    <script defer src="js/main.js"></script>
+    <script defer src="js/ai-assistant.js"></script>
+  </head>
+  <body data-page="products">
+    <header class="site-header"></header>
+    <main class="page">
+      <section class="page-title">
+        <p class="eyebrow">Safety store</p>
+        <h1>Products</h1>
+        <p>Search, filter, compare safety level, and customize motorcycle gear.</p>
+      </section>
+      <section class="shop-layout">
+        <aside class="filters">
+          <label>Search<input id="searchInput" type="search" placeholder="Helmet, jacket, armor"></label>
+          <label>Category<select id="categoryFilter"><option value="">All categories</option></select></label>
+          <label>Size<select id="sizeFilter"><option value="">All sizes</option><option>XS</option><option>S</option><option>M</option><option>L</option><option>XL</option><option>XXL</option><option>42</option><option>43</option><option>44</option></select></label>
+          <label>Safety level<select id="safetyFilter"><option value="">All levels</option><option>Medium</option><option>High</option><option>Very High</option></select></label>
+          <label>Max price<input id="priceFilter" type="range" min="50" max="700" value="700"><span id="priceValue">$700</span></label>
+        </aside>
+        <section>
+          <div class="toolbar"><strong id="productCount">0 products</strong><a class="btn secondary small" href="cart.html">Open cart</a></div>
+          <div class="product-grid" id="productsGrid"></div>
+        </section>
+      </section>
+    </main>
+    <footer class="site-footer"></footer>
+    <div id="aiAssistant"></div>
+  </body>
+</html>

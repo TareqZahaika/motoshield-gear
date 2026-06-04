@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Cart | MotoShield Gear</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script defer src="js/supabase.js"></script>
+    <script defer src="js/cart.js"></script>
+    <script defer src="js/main.js"></script>
+    <script defer src="js/ai-assistant.js"></script>
+  </head>
+  <body data-page="cart">
+    <header class="site-header"></header>
+    <main class="page">
+      <section class="page-title"><p class="eyebrow">Shopping cart</p><h1>Your protective gear</h1></section>
+      <section class="cart-layout">
+        <div class="cart-list" id="cartItems"></div>
+        <aside class="summary">
+          <h2>Order summary</h2>
+          <div class="summary-line"><span>Subtotal</span><strong id="cartSubtotal">$0</strong></div>
+          <div class="summary-line"><span>Estimated delivery</span><strong>$15</strong></div>
+          <div class="summary-line total"><span>Total</span><strong id="cartTotal">$0</strong></div>
+          <a class="btn primary full" href="checkout.html">Continue to checkout</a>
+          <a class="btn secondary full" href="products.html">Keep shopping</a>
+        </aside>
+      </section>
+    </main>
+    <footer class="site-footer"></footer>
+    <div id="aiAssistant"></div>
+  </body>
+</html>

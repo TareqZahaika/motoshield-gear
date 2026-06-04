@@ -1,0 +1,6 @@
+node_modules/
+.env
+.env.*
+.railway/
+supabase/.temp/
+*.log

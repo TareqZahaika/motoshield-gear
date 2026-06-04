@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>MotoShield Gear | Ride Safe</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script defer src="js/supabase.js"></script>
+    <script defer src="js/cart.js"></script>
+    <script defer src="js/main.js"></script>
+    <script defer src="js/ai-assistant.js"></script>
+  </head>
+  <body data-page="home">
+    <header class="site-header"></header>
+    <main>
+      <section class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow">Motorcycle safety store</p>
+          <h1>MotoShield Gear</h1>
+          <p class="hero-slogan">Ride Safe. Ride Smart. Ride Protected.</p>
+          <p class="hero-text">Professional riding clothing, helmets, armor, and safety accessories built for riders who want protection without losing style.</p>
+          <div class="actions">
+            <a class="btn primary" href="products.html">Shop safety gear</a>
+            <a class="btn secondary" href="about.html">Our safety mission</a>
+          </div>
+        </div>
+        <div class="hero-visual" aria-label="Motorcycle rider safety visual">
+          <div class="helmet-shape"></div>
+          <div class="hero-panel">
+            <span>CE Protection</span>
+            <strong>Level 2 Armor</strong>
+            <small>Impact zones: shoulders, elbows, back, knees</small>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-head">
+          <p class="eyebrow">Shop by category</p>
+          <h2>Everything a rider needs to stay protected</h2>
+        </div>
+        <div class="category-grid" id="homeCategories"></div>
+      </section>
+
+      <section class="section split">
+        <div>
+          <p class="eyebrow">Why MotoShield</p>
+          <h2>Protection first, confidence every ride</h2>
+          <p>Every product is presented with a clear safety rating, riding use case, sizes, colors, and customization options so customers can choose the right protection.</p>
+        </div>
+        <div class="feature-list">
+          <article><strong>Safety ratings</strong><span>Compare products by protection level.</span></article>
+          <article><strong>Custom gear</strong><span>Add size, color, initials, material, and notes.</span></article>
+          <article><strong>Smart assistant</strong><span>Get demo recommendations for gear and sizing.</span></article>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-head">
+          <p class="eyebrow">Best sellers</p>
+          <h2>Recommended protective gear</h2>
+          <a href="products.html">View all products</a>
+        </div>
+        <div class="product-grid" id="bestSellers"></div>
+      </section>
+
+      <section class="section">
+        <div class="reviews-grid">
+          <article class="review"><strong>Excellent jacket quality</strong><p>The safety levels made it easy to compare products for daily commuting.</p><span>- Rider review</span></article>
+          <article class="review"><strong>Easy customization</strong><p>I added initials and chose stronger protection before checkout.</p><span>- Rider review</span></article>
+          <article class="review"><strong>Professional store idea</strong><p>The project feels like a real motorcycle safety business.</p><span>- Class demo review</span></article>
+        </div>
+      </section>
+    </main>
+    <footer class="site-footer"></footer>
+    <div id="aiAssistant"></div>
+  </body>
+</html>

@@ -1,0 +1,14 @@
+{
+  "name": "motoshield-gear",
+  "version": "1.0.0",
+  "private": true,
+  "description": "MotoShield Gear motorcycle safety e-commerce project.",
+  "scripts": {
+    "frontend": "node frontend-server.js",
+    "backend": "node backend/server.js",
+    "start": "npm run frontend"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
